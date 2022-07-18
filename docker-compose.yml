@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+
+  Controller:
+    image: mcr.microsoft.com/dotnet/runtime
+    container_name: RFIDDemo-Controller
+    networks:
+      - rfid_network     
+    depends_on:
+      - MQTTBroker
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    command: dotnet RFIDController.dll
+    volumes:
+      - ./RFIDController:/app
+      - ./Cfg/LayoutDetails:/app/LayoutDetails
+      - ./Cfg/RFIDController/config.json:/app/config.json
+
+  WebServer:
+    image: httpd
+    container_name: RFIDDemo-Web
+    networks:
+      - rfid_network 
+    ports:
+      - 80:80
+    depends_on:
+      - MQTTBroker
+    volumes:
+      - ./WebSite:/usr/local/apache2/htdocs/
+      - ./Cfg/StockItemDetails:/usr/local/apache2/htdocs/StockItemDetails
+      - ./Cfg/StockItemImages:/usr/local/apache2/htdocs/StockItemImages
+ 
+  MQTTBroker:
+    image: "eclipse-mosquitto"
+    container_name: MQTT-Broker
+    networks:
+      - rfid_network 
+    ports:
+      - 1883:1883
+      - 9001:9001
+      - 1884:1884    
+    volumes:
+      - ./Data/Mosquitto:/mosquitto/data
+      - ./Logs/Mosquitto:/mosquitto/log
+      - ./Cfg/MosquittoMQTT/mosquitto.conf:/mosquitto/config/mosquitto.conf
+
+networks:
+  rfid_network:
+    name: rfid_network    

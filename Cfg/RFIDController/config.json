@@ -1,0 +1,12 @@
+﻿{
+  "MQTT": {
+    "Host": "MQTTBroker",
+    "Port": 1883
+  },
+  "config": {
+    "blocks": "/app/LayoutDetails/Blocks.json",
+    "readers": "/app/LayoutDetails/RFIDReaders.json",
+    "stockitems": "/app/LayoutDetails/StockItems.json"
+  }
+  
+}

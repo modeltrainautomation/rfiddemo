@@ -1,0 +1,15 @@
+{
+    "Enabled": false,
+    "Stock#": "<template>",
+    "Name": "<template>",
+    "Description": "",
+    "Era": "",
+    "Model": "",
+    "Storage Location": "",
+    "TagId": "",
+    "RFIDDetails": {
+        "RFIDTagList_Front": [],
+        "RFIDTagList_Center": [],
+        "RFIDTagList_Back": []
+    }
+}

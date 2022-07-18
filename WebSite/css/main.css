@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mouseover:hover {
+    cursor: pointer;
+}
+
+#MQTTStatus {
+    margin: 10px;
+}

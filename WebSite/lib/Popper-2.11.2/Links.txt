@@ -1,0 +1,4 @@
+https://unpkg.com/@popperjs/core@2.11.2/dist/umd/popper.min.js
+https://unpkg.com/@popperjs/core@2.11.2/dist/umd/popper.min.js.map
+https://unpkg.com/@popperjs/core@2.11.2/dist/umd/popper.js
+https://unpkg.com/@popperjs/core@2.11.2/dist/umd/popper.js.map

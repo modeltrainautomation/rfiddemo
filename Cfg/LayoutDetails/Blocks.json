@@ -1,0 +1,45 @@
+[
+    {
+        "Id": 0,
+        "Name": "OffLayout",
+        "Description": "",
+        "StockItems": [
+            "0005",
+            "0004"
+        ]
+    },
+    {
+        "Id": 1,
+        "Name": "Left Top",
+        "Description": "",
+        "StockItems": []
+    },
+    {
+        "Id": 2,
+        "Name": "Left Bottom",
+        "Description": "",
+        "StockItems": []
+    },
+    {
+        "Id": 3,
+        "Name": "Interchange",
+        "Description": "",
+        "StockItems": []
+    },
+    {
+        "Id": 4,
+        "Name": "Right Top",
+        "Description": "",
+        "StockItems": []
+    },
+    {
+        "Id": 5,
+        "Name": "Right Bottom",
+        "Description": "",
+        "StockItems": [
+            "0001",
+            "0002",
+            "0003"
+        ]
+    }
+]

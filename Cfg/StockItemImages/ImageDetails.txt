@@ -1,0 +1,3 @@
+
+Max Width = 75 pixels
+Height = 34 pixels
