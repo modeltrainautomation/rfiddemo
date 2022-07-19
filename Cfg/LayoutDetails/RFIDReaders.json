@@ -148,5 +148,11 @@
         "Type": 1,
         "BlockId": 0,
         "Position": 1
+    },    
+    {
+        "Id": "Pepper_C1-1A602C-1",
+        "Type": 3,
+        "BlockId": 0,
+        "Position": 1
     }
 ]

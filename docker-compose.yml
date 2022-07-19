@@ -17,6 +17,7 @@ services:
       - ./RFIDController:/app
       - ./Cfg/LayoutDetails:/app/LayoutDetails
       - ./Cfg/RFIDController/config.json:/app/config.json
+    restart: unless-stopped
 
   WebServer:
     image: httpd
@@ -31,6 +32,7 @@ services:
       - ./WebSite:/usr/local/apache2/htdocs/
       - ./Cfg/StockItemDetails:/usr/local/apache2/htdocs/StockItemDetails
       - ./Cfg/StockItemImages:/usr/local/apache2/htdocs/StockItemImages
+    restart: unless-stopped
  
   MQTTBroker:
     image: "eclipse-mosquitto"
@@ -45,6 +47,7 @@ services:
       - ./Data/Mosquitto:/mosquitto/data
       - ./Logs/Mosquitto:/mosquitto/log
       - ./Cfg/MosquittoMQTT/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    restart: unless-stopped
 
 networks:
   rfid_network:
