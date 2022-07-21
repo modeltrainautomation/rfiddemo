@@ -6,10 +6,5 @@
     "Era": "",
     "Model": "",
     "Storage Location": "",
-    "TagId": "",
-    "RFIDDetails": {
-        "RFIDTagList_Front": [],
-        "RFIDTagList_Center": [],
-        "RFIDTagList_Back": []
-    }
+    "TagId": ""
 }

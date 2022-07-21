@@ -6,14 +6,5 @@
     "Era": "Era 8 BR Sectorisation: 1983-1994",
     "Model": "Hornby R2521",
     "Storage Location": "Office, Cupboard 2, Box B001",
-    "TagId": "04BC2A2A655580",
-    "RFIDDetails": {
-        "RFIDTagList_Front": [
-            "0009"
-        ],
-        "RFIDTagList_Center": [
-            "04BC2A2A655580"
-        ],
-        "RFIDTagList_Back": []
-    }
+    "TagId": "04BC2A2A655580"
 }

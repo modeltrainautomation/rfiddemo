@@ -3,10 +3,7 @@
         "Id": 0,
         "Name": "OffLayout",
         "Description": "",
-        "StockItems": [
-            "0005",
-            "0004"
-        ]
+        "StockItems": []
     },
     {
         "Id": 1,
@@ -36,10 +33,6 @@
         "Id": 5,
         "Name": "Right Bottom",
         "Description": "",
-        "StockItems": [
-            "0001",
-            "0002",
-            "0003"
-        ]
+        "StockItems": []
     }
 ]

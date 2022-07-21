@@ -2,18 +2,9 @@
     "Enabled": true,
     "Stock#": "D8011",
     "Name": "D8011",
-    "Description": "B8011",
+    "Description": "D8011",
     "Era": "Era 8 BR Sectorisation: 1983-1994",
     "Model": "Hornby R2521",
     "Storage Location": "Office, Cupboard 2, Box B001",
-    "TagId": "044D312A655580",
-    "RFIDDetails": {
-        "RFIDTagList_Front": [
-            "0003"
-        ],
-        "RFIDTagList_Center": [
-            "044D312A655580"
-        ],
-        "RFIDTagList_Back": []
-    }
+    "TagId": "044D312A655580"
 }

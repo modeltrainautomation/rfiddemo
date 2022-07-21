@@ -1,0 +1,114 @@
+{
+	"network":	{
+		"wifi":	{
+			"mode":	1,
+			"auth_method":	3,
+			"channel":	9,
+			"ssid":	"rfid",
+			"password":	"rfiddemo",
+			"fixed_ip":	0,
+			"ip":	"192.168.100.1",
+			"netmask":	"255.255.255.0",
+			"gateway":	"192.168.100.1",
+			"dns":	"192.168.100.1",
+			"web_admin":	"admin",
+			"web_password":	"admin"
+		}
+	},
+	"communication":	{
+		"mdns_enabled":	1,
+		"udp_discovery_enabled":	1,
+		"device_name":	"Pepper_C1-MUX-1A5CA4",
+		"proto_pass":	"",
+		"uart":	{
+			"uart0_proto":	0,
+			"uart0_baud":	4,
+			"uart2_proto":	1,
+			"uart2_baud":	4,
+			"passthru_wifi_ok_msg":	"",
+			"passthru_wifi_fail_msg":	"",
+			"rs485_address":	1
+		},
+		"tcp_server":	{
+			"enabled":	0,
+			"port":	1234,
+			"timeout":	0
+		},
+		"tcp_client":	{
+			"enabled":	0,
+			"server":	"",
+			"port":	1234,
+			"timeout":	0
+		},
+		"bluetooth":	{
+			"proto":	0,
+			"pin":	"0000",
+			"hid_enter":	0
+		},
+		"mqtt":	{
+			"enabled":	1,
+			"server":	"10.100.1.1",
+			"port":	1883,
+			"user":	"admin",
+			"pass":	"",
+			"out_topic":	"rfid/Pepper_C1-1A5CA4",
+			"in_topic":	"in_topic"
+		},
+		"restapi":	{
+			"enabled":	0,
+			"url":	"",
+			"auth":	0,
+			"user":	"",
+			"pass":	""
+		},
+		"ws":	{
+			"enabled":	0,
+			"url":	"wscomm.cgi"
+		}
+	},
+	"rfid":	{
+		"tech_support":	17,
+		"polling_enabled":	1,
+		"polling_timeout":	200,
+		"ignore_timeout":	0,
+		"read_memory_en":	0,
+		"read_memory_no":	1,
+		"read_memory_count":	1,
+		"read_memory_keyno":	0,
+		"read_memory_keyab":	0,
+		"known_tag":	{
+			"gpio":	0,
+			"gpio_level":	0,
+			"message":	3,
+			"led_color":	3,
+			"timeout":	200
+		},
+		"unknown_tag":	{
+			"gpio":	0,
+			"gpio_level":	0,
+			"message":	3,
+			"led_color":	3,
+			"timeout":	200
+		},
+		"keyType0":	6,
+		"key0":	"FFFFFFFFFFFFFFFFFFFFFFFF",
+		"keyType1":	6,
+		"key1":	"000000000000111111111111",
+		"keyType2":	3,
+		"key2":	"00000000000000000000000000000000",
+		"keyType3":	0,
+		"key3":	"00000000000000000000000000000000",
+		"keyType4":	0,
+		"key4":	"00112233445566778899AABBCCDDEEFF",
+		"selected_antennas":	185
+	},
+	"sleep":	{
+		"sleep_tag_timeout":	0,
+		"sleep_tag_present":	0,
+		"wake_up_timer":	0,
+		"wake_up_trigger1":	0,
+		"wake_up_trigger2":	0
+	},
+	"version":	2000,
+	"build_number":	1183
+}
