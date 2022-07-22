@@ -1,10 +1,12 @@
 {
     "Enabled": true,
-    "Stock#": "M42",
-    "Name": "M42",
-    "Description": "M42",
-    "Era": "",
-    "Model": "",
-    "Storage Location": "",
-    "TagId": "04C01A2A655580"
+    "details": {
+        "Stock#": "M42",
+        "Name": "M42",
+        "Description": "M42",
+        "Era": "",
+        "Model": "",
+        "Storage Location": "",
+        "TagId": "04C01A2A655580"
+    }
 }

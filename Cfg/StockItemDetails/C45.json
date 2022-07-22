@@ -1,10 +1,12 @@
 {
     "Enabled": true,
-    "Stock#": "C45",
-    "Name": "C45",
-    "Description": "C45",
-    "Era": "Era 8 BR Sectorisation: 1983-1994",
-    "Model": "Hornby R2521",
-    "Storage Location": "Office, Cupboard 2, Box B001",
-    "TagId": "04D8252A655580"
+    "details": {
+        "Stock#": "C45",
+        "Name": "C45",
+        "Description": "C45",
+        "Era": "Era 8 BR Sectorisation: 1983-1994",
+        "Model": "Hornby R2521",
+        "Storage Location": "Office, Cupboard 2, Box B001",
+        "TagId": "04D8252A655580"
+    }
 }

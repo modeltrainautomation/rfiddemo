@@ -1,10 +1,12 @@
 {
     "Enabled": true,
-    "Stock#": "C67",
-    "Name": "C67",
-    "Description": "C67",
-    "Era": "",
-    "Model": "",
-    "Storage Location": "",
-    "TagId": "0418202A655581"
+    "details": {
+        "Stock#": "C67",
+        "Name": "C67",
+        "Description": "C67",
+        "Era": "",
+        "Model": "",
+        "Storage Location": "",
+        "TagId": "0418202A655581"
+    }
 }

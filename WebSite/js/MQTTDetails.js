@@ -4,6 +4,7 @@
 
 var MQTTServer = '';
 var MQTTPort = 0;
+var StockItemId = "xxxx";
 
 const clientId = "MKR-RFIDDemoLayout-" + parseInt(Math.random() * 100, 10)
 var client = null;
@@ -12,7 +13,7 @@ function OnPageLoad() {
 
     // $('#MQTTServer').append($('<option>', { value: "10.100.1.1", text: "10.100.1.1" }));
     $('#MQTTServer').append($('<option>', { value: location.hostname, text: location.hostname }));
-    
+
     $('#MQTTPort').append($('<option>', { value: 1884, text: 1884 }));
 
     MQTTServer = $('#MQTTServer option:selected').val();
@@ -21,10 +22,9 @@ function OnPageLoad() {
     MQTTconnect();
 }
 
-function MQTTChangeServer()
-{      
-    client.end();  
-    MQTTconnect();    
+function MQTTChangeServer() {
+    client.end();
+    MQTTconnect();
 }
 
 function MQTTconnect() {
@@ -88,7 +88,7 @@ function onClose() {
 
 function onReconnect() {
     console.log('MQTT onReonnect...');
-    $('#status').html('Reconnected to ' + MQTTServer + ':' + MQTTPort );
+    $('#status').html('Reconnected to ' + MQTTServer + ':' + MQTTPort);
 }
 
 function onOffLine() {
@@ -201,41 +201,8 @@ function onMessage(topic, message) {
 
                 if (payload.StockItem.length > 0) {
 
-                    let DetailsTable = "<br/><table class=\"styled-table\"> <thead><th>Name</th><th>Value</th> </thead> <tbody>"
-                    //DetailsTable += "<tr><td>Picture</td><td><img class=\"details\" src=\"StockItemImages/" + payload.StockItem + "-sm.jpg\"></td></tr>"
-                    DetailsTable += "<tr><td>Picture</td><td><img class=\"details\" src=\"StockItemImages/" + payload.StockItem + "-sm.gif\"></td></tr>"
-
-                    Object.keys(payload.details).forEach(element => {
-
-                        if (element == "RFIDDetails") {
-                            let tags = "";
-
-                            for (i = 0; i < payload.details[element].RFIDTagList_Front.length; i++) {
-                                if (tags != "") tags += ', '
-                                tags += payload.details[element].RFIDTagList_Front[i];
-                            }
-                            for (i = 0; i < payload.details[element].RFIDTagList_Center.length; i++) {
-                                if (tags != "") tags += ', '
-                                tags += payload.details[element].RFIDTagList_Center[i];
-                            }
-                            for (i = 0; i < payload.details[element].RFIDTagList_Back.length; i++) {
-                                if (tags != "") tags += ', '
-                                tags += payload.details[element].RFIDTagList_Back[i];
-                            }
-
-                            DetailsTable += "<tr><td>RFID Tags</td><td>" + tags + "</td></tr>"
-                        }
-                        else if (element == "Enabled") {
-
-                        }
-                        else
-                            DetailsTable += "<tr><td>" + element + "</td><td>" + payload.details[element] + "</td></tr>"
-                    }
-                    )
-
-                    DetailsTable += "</tbody></table>"
-                    $(block).html(DetailsTable);
-
+                    StockItemId = payload.StockItem
+                    AjaxGetPage("/StockItemDetails/" + payload.StockItem + ".json", ParseStockItemDetails);
                 }
                 else {
                     $(block).text("");
@@ -244,3 +211,33 @@ function onMessage(topic, message) {
         }
 }
 
+function ParseStockItemDetails(data) {
+    // console.log("Date recived!");
+    // console.log(data);
+
+    var block = '#StockItemDetails';
+
+    let DetailsTable = "<br/><table class=\"styled-table\"> <thead><th>Name</th><th>Value</th> </thead> <tbody>"
+
+    DetailsTable += "<tr><td>Picture</td><td><img class=\"details\" src=\"StockItemImages/" + StockItemId + "-sm.gif\"></td></tr>"
+
+    Object.keys(data.details).forEach(element => {
+
+        DetailsTable += "<tr><td>" + element + "</td><td>" + data.details[element] + "</td></tr>"
+    }
+    )
+
+    DetailsTable += "</tbody></table>"
+    $(block).html(DetailsTable);
+}
+
+function AjaxGetPage(url, resultfunction) {
+    console.log("Calling AjaxGetPage: " + url);
+    $.ajaxSetup({ cache: false });
+    $.ajax(
+        {
+            url: url,
+            success: resultfunction
+        }
+    );
+} 

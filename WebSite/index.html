@@ -235,20 +235,6 @@
             MQTTSend('stockdetails', str);
         }
 
-        function actionRemoveStockItemFromLayout() {
-
-            StockItem = document.getElementsByClassName("details")[0];
-
-            StockItemId = StockItem.getAttribute("stockitemid");
-
-            console.log(StockItemId);
-
-            let str = "{  \"action\" : \"RemoveFromLayout\", \"StockItemId\" : \"" + StockItemId + "\"}"
-
-            MQTTSend('stockdetails', str);
-
-        }
-
         function actionGetStockItemDetails(evt) {
 
             StockItemId = evt.currentTarget.getAttribute('stockitemid');
@@ -263,55 +249,6 @@
             let str = "{ \"action\" : \"" + strAction + "\"}"
 
             MQTTSend('layoutcontrol', str);
-        }
-
-        // function actionChangeStockItemView()
-        // {
-        //         // document.styleSheets.
-        //         // alert("hello")
-        //         document.querySelectorAll("td .stockitem img").display = "none";
-        //         var sel = document.querySelectorAll("td .stockitem span")
-
-        //         sel.display = "inline";
-        // }
-
-        // window.addEventListener("resize", changeSVG);
-
-        function changeSVG() {
-
-            var element = document.getElementById('TrackBlock5').getBoundingClientRect();
-            var block = getElement('NewBlock-5').getBoundingClientRect();
-
-            var left = element.left;
-            var right = element.right
-
-            var middle = right - left;
-
-            var top = element.top;
-
-            var str = 'L: ' + left + ', R: ' + right + ' M: ' + middle
-
-
-
-            console.log(block.top);
-
-            block.top = window.scrollY + top + 35;
-
-            // console.log(block.y);
-            // window.alert();
-
-            //     window.innerWidth;
-            //     window.innerHeight;
-
-
-            //     // let y = parseInt(mycircle.getAttribute('y'));
-
-            //     // y += 20;
-
-            //     // // document.write(mycircle.getAttribute('y'));
-            //     // // document.write(y);
-
-            //     // mycircle.setAttribute('y', y);
         }
 
     </script>

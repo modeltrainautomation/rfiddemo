@@ -1,10 +1,12 @@
 {
     "Enabled": true,
-    "Stock#": "O11",
-    "Name": "O11",
-    "Description": "O11",
-    "Era": "Era 8 BR Sectorisation: 1983-1994",
-    "Model": "Hornby R2521",
-    "Storage Location": "Office, Cupboard 2, Box B001",
-    "TagId": "048097D2826C80"
+    "details": {
+        "Stock#": "O11",
+        "Name": "O11",
+        "Description": "O11",
+        "Era": "Era 8 BR Sectorisation: 1983-1994",
+        "Model": "Hornby R2521",
+        "Storage Location": "Office, Cupboard 2, Box B001",
+        "TagId": "048097D2826C80"
+    }
 }

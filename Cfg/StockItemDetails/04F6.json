@@ -1,12 +1,12 @@
 {
     "Enabled": true,
     "details": {
-        "Stock#": "D8011",
-        "Name": "D8011",
-        "Description": "D8011",
+        "Stock#": "TestTag",
+        "Name": "TestTag",
+        "Description": "TestTag",
         "Era": "Era 8 BR Sectorisation: 1983-1994",
         "Model": "Hornby R2521",
         "Storage Location": "Office, Cupboard 2, Box B001",
-        "TagId": "044D312A655580"
+        "TagId": "04F6242A655580"
     }
 }

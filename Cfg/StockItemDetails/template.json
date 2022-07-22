@@ -1,10 +1,12 @@
 {
     "Enabled": false,
-    "Stock#": "<template>",
-    "Name": "<template>",
-    "Description": "",
-    "Era": "",
-    "Model": "",
-    "Storage Location": "",
-    "TagId": ""
+    "details": {
+        "Stock#": "<template>",
+        "Name": "<template>",
+        "Description": "",
+        "Era": "",
+        "Model": "",
+        "Storage Location": "",
+        "TagId": ""
+    }
 }
