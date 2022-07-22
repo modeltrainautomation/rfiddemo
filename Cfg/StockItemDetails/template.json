@@ -4,8 +4,10 @@
         "Stock#": "<template>",
         "Name": "<template>",
         "Description": "",
+        "Load" : "Empty",
         "Era": "",
         "Model": "",
+        "Owner": "",
         "Storage Location": "",
         "TagId": ""
     }

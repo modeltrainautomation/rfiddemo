@@ -2,11 +2,13 @@
     "Enabled": true,
     "details": {
         "Stock#": "O12",
-        "Name": "O12",
-        "Description": "O12",
-        "Era": "Era 8 BR Sectorisation: 1983-1994",
-        "Model": "Hornby R2521",
-        "Storage Location": "Office, Cupboard 2, Box B001",
+        "Name": "",
+        "Description": "Medium open (3-plank)",
+        "Load" : "Empty",
+        "Era": "",
+        "Model": "Hornby",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 4 - Slot 4",
         "TagId": "046197D2826C80"
     }
 }

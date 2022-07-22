@@ -2,11 +2,13 @@
     "Enabled": true,
     "details": {
         "Stock#": "C36",
-        "Name": "Village Of Chantry",
-        "Description": "Designer: General Motors, Weight: 126 tons, Purpose: Freight, Wheel Arrangement: CO-CO",
-        "Era": "Era 8 BR Sectorisation: 1983-1994",
-        "Model": "Hornby R2521",
-        "Storage Location": "Office, Cupboard 2, Box B001",
+        "Name": "",
+        "Description": "Covered hopper",
+        "Load" : "Empty",
+        "Era": "",
+        "Model": "Hornby",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 2 - Slot 1",
         "TagId": "04A097D2826C80"
     }
 }

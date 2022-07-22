@@ -2,11 +2,13 @@
     "Enabled": true,
     "details": {
         "Stock#": "N66",
-        "Name": "N66",
-        "Description": "N66",
-        "Era": "Era 8 BR Sectorisation: 1983-1994",
-        "Model": "Hornby R2521",
-        "Storage Location": "Office, Cupboard 2, Box B001",
+        "Name": "",
+        "Description": "LMS General Utility Van (GUV)",
+        "Load" : "Newspapers",
+        "Era": "",
+        "Model": "Hornby",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 4 - Slot 2",
         "TagId": "048197D2826C80"
     }
 }

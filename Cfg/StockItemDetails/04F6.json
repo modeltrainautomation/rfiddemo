@@ -1,12 +1,14 @@
 {
     "Enabled": true,
     "details": {
-        "Stock#": "TestTag",
-        "Name": "TestTag",
-        "Description": "TestTag",
-        "Era": "Era 8 BR Sectorisation: 1983-1994",
-        "Model": "Hornby R2521",
-        "Storage Location": "Office, Cupboard 2, Box B001",
+        "Stock#": "04F6",
+        "Name": "Test Tag",
+        "Description": "Test Tag for RFID Demo Layout",
+        "Load" : "Empty",
+        "Era": "",
+        "Model": "",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 1 - Slot 0",
         "TagId": "04F6242A655580"
     }
 }

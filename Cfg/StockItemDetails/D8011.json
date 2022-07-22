@@ -3,10 +3,12 @@
     "details": {
         "Stock#": "D8011",
         "Name": "D8011",
-        "Description": "D8011",
-        "Era": "Era 8 BR Sectorisation: 1983-1994",
-        "Model": "Hornby R2521",
-        "Storage Location": "Office, Cupboard 2, Box B001",
+        "Description": "Class 20",
+        "Load" : "",
+        "Era": "",
+        "Model": "Hornby",
+        "Owner": "David E",
+        "Storage Location": "Office, Demo Box 3 - Slot 1",
         "TagId": "044D312A655580"
     }
 }

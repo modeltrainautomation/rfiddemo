@@ -2,11 +2,13 @@
     "Enabled": true,
     "details": {
         "Stock#": "C67",
-        "Name": "C67",
-        "Description": "C67",
+        "Name": "",
+        "Description": "PAA covered hopper",
+        "Load" : "Barley",
         "Era": "",
-        "Model": "",
-        "Storage Location": "",
+        "Model": "Bachmann",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 2 - Slot 4",
         "TagId": "0418202A655581"
     }
 }

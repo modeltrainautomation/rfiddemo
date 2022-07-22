@@ -2,11 +2,13 @@
     "Enabled": true,
     "details": {
         "Stock#": "M42",
-        "Name": "M42",
-        "Description": "M42",
+        "Name": "",
+        "Description": "Steel 16-ton mineral wagon",
+        "Load" : "Empty",
         "Era": "",
-        "Model": "",
-        "Storage Location": "",
+        "Model": "Hornby",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 4 - Slot 1",
         "TagId": "04C01A2A655580"
     }
 }

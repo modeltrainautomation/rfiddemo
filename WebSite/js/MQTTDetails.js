@@ -217,7 +217,7 @@ function ParseStockItemDetails(data) {
 
     var block = '#StockItemDetails';
 
-    let DetailsTable = "<br/><table class=\"styled-table\"> <thead><th>Name</th><th>Value</th> </thead> <tbody>"
+    let DetailsTable = "<br/><table class=\"styled-table\"> <thead><th style=\"width: 30%\">Name</th><th>Value</th> </thead> <tbody>"
 
     DetailsTable += "<tr><td>Picture</td><td><img class=\"details\" src=\"StockItemImages/" + StockItemId + "-sm.gif\"></td></tr>"
 

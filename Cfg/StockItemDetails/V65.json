@@ -2,11 +2,13 @@
     "Enabled": true,
     "details": {
         "Stock#": "V65",
-        "Name": "V65",
-        "Description": "V65",
-        "Era": "Era 8 BR Sectorisation: 1983-1994",
-        "Model": "Hornby R2521",
-        "Storage Location": "Office, Cupboard 2, Box B001",
+        "Name": "",
+        "Description": "Shock Van",
+        "Load" : "Bicycles",
+        "Era": "",
+        "Model": "Hornby",
+        "Owner": "David T",
+        "Storage Location": "Office, Demo Box 4 - Slot 6",
         "TagId": "04BC2A2A655580"
     }
 }
