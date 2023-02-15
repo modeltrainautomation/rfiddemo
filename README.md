@@ -18,7 +18,7 @@ With RFID and the knowledge of where stock items are located you can...
 
 ## Layout Design
 ####  Demo Layout
-![RFID Demo Layout](./Images/RFIDDemoLayout.png)    
+![RFID Demo Layout](./Images/RFIDDemoLayout.PNG)    
 
 ## Hardware Requirements:
     - Raspbery Pi 3b + 16GB MicroSD card
